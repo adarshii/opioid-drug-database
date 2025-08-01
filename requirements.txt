@@ -1,7 +1,4 @@
 streamlit
-rdkit
+rdkit-pypi
 pandas
 requests
-pubchempy
-Pillow
-
