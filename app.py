@@ -1,15 +1,14 @@
-# ✅ Cleaned & Optimized Streamlit App for Opioid Drug Database
-# Suitable for deployment on Streamlit Cloud
+# ✅ Final Working Streamlit App with RDKit (Cloud-Compatible)
+# Suitable for deployment on Streamlit Cloud with rdkit-pypi and packages.txt fix
 
 import streamlit as st
 from rdkit import Chem
 from rdkit.Chem import Draw, Descriptors
-import requests
 import base64
 from io import BytesIO
 
 # -----------------------------
-# ✅ Opioid Drug Database
+# ✅ Opioid Drug Database (One sample drug)
 # -----------------------------
 OPIOID_DATA = [
     {
@@ -25,8 +24,7 @@ OPIOID_DATA = [
         "side_effects": ["Dependence", "Tolerance", "Withdrawal symptoms"],
         "precautions": ["Avoid alcohol", "Monitor respiratory function", "Risk of addiction"],
         "pubchem_cid": "5288826"
-    },
-    # Add more drugs if needed...
+    }
 ]
 
 # -----------------------------
@@ -157,4 +155,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
